@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/image_slide"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEADIND"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/image_slide"
+        android:layout_marginVertical="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/heading"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Lorem Imsump door lorek, yasso, asiuue, soadadiuhieur, bananus comacis"/>
+
+</RelativeLayout>

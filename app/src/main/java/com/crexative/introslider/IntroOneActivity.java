@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class IntroOneActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private ViewPagerAdapter viewPagerAdapter;
@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_intro_one);
 
         introManager = new IntroManager(this);
         if (!introManager.check()){
             introManager.setFirst(false);
-            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+            startActivity(new Intent(IntroOneActivity.this, HomeActivity.class));
             finish();
         }
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                startActivity(new Intent(IntroOneActivity.this, HomeActivity.class));
                 finish();
             }
         });
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 if (current<layouts.length){
                     viewPager.setCurrentItem(current);
                 } else {
-                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                    startActivity(new Intent(IntroOneActivity.this, HomeActivity.class));
                     finish();
                 }
             }

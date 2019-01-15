@@ -14,4 +14,19 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+    <!-- Intro Two Theme -->
+    <style name="IntroTwo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/indigo</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorButtonNormal">@color/pink</item>
+    </style>
+
+    <color name="indigo">#6f4ca8</color>
+    <color name="pink">#ff4081</color>
 </resources>
